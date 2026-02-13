@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="resources/img/logo.png" width="128" alt="Pubspec Manager">
+</p>
+
 <h1 align="center">Pubspec Manager</h1>
 
 <p align="center">

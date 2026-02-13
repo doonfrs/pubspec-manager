@@ -20,7 +20,7 @@
     "pub.dev",
     "package manager"
   ],
-  "icon": "resources/icons/pubspec-manager.png",
+  "icon": "resources/img/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/doonfrs/pubspec-manager"
