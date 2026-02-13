@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/doonfrs.pubspec-manager?label=VS%20Code%20Marketplace" alt="VS Code Marketplace">
+  <a href="https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager-gui">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/doonfrs.pubspec-manager-gui?label=VS%20Code%20Marketplace" alt="VS Code Marketplace">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/doonfrs.pubspec-manager" alt="Installs">
+  <a href="https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager-gui">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/doonfrs.pubspec-manager-gui" alt="Installs">
   </a>
   <a href="https://github.com/doonfrs/pubspec-manager/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/doonfrs/pubspec-manager" alt="License">
@@ -45,7 +45,7 @@
 
 ## Getting Started
 
-1. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager)
+1. Install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=doonfrs.pubspec-manager-gui)
 2. Open any `pubspec.yaml` file in VS Code
 3. Click the **package icon** in the editor title bar (top-right)
 
