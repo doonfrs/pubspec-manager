@@ -1,5 +1,5 @@
 {
-  "name": "pubspec-manager",
+  "name": "pubspec-manager-gui",
   "displayName": "Pubspec Manager",
   "description": "Visual GUI editor for pubspec.yaml — browse, search, update, and manage your Dart & Flutter dependencies with ease.",
   "version": "0.1.0",
