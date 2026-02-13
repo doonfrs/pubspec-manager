@@ -1,6 +1,6 @@
 {
   "name": "pubspec-manager-gui",
-  "displayName": "Pubspec Manager",
+  "displayName": "Pubspec Manager Pro",
   "description": "Visual GUI editor for pubspec.yaml — browse, search, update, and manage your Dart & Flutter dependencies with ease.",
   "version": "0.1.0",
   "publisher": "doonfrs",
