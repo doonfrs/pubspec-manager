@@ -1,0 +1,96 @@
+{
+  "name": "pubspec-manager",
+  "displayName": "Pubspec Manager",
+  "description": "Visual GUI editor for pubspec.yaml — browse, search, update, and manage your Dart & Flutter dependencies with ease.",
+  "version": "0.1.0",
+  "publisher": "doonfrs",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "keywords": [
+    "dart",
+    "flutter",
+    "pubspec",
+    "dependencies",
+    "pub.dev",
+    "package manager"
+  ],
+  "icon": "resources/icons/pubspec-manager.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doonfrs/pubspec-manager"
+  },
+  "main": "./dist/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "pubspecManager.editor",
+        "displayName": "Pubspec Manager",
+        "selector": [
+          {
+            "filenamePattern": "pubspec.yaml"
+          }
+        ],
+        "priority": "option"
+      }
+    ],
+    "commands": [
+      {
+        "command": "pubspecManager.openEditor",
+        "title": "Open Pubspec Manager",
+        "icon": "$(package)",
+        "category": "Pubspec Manager"
+      },
+      {
+        "command": "pubspecManager.refreshDependencies",
+        "title": "Refresh Dependencies",
+        "icon": "$(refresh)",
+        "category": "Pubspec Manager"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "pubspecManager.openEditor",
+          "when": "resourceFilename == pubspec.yaml && activeCustomEditorId != pubspecManager.editor",
+          "group": "navigation"
+        },
+        {
+          "command": "pubspecManager.refreshDependencies",
+          "when": "activeCustomEditorId == pubspecManager.editor",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "pubspecManager.openEditor",
+          "when": "resourceFilename == pubspec.yaml",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "build": "node esbuild.mjs --production",
+    "lint": "eslint src/ webview/",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.0.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.36",
+    "yaml": "^2.7.0"
+  }
+}
